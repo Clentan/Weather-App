@@ -2,24 +2,29 @@
 {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(53, 194, 213);
+  background-color: rgb(215, 223, 224);
 }
 ul{
   display: flex;
   gap: 70px;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #888888;
+  background-image: url('C:\\Users\\clent\\OneDrive\\Desktop\\Thuso\\Weather-App\\weather-weather\\src\\images\\Rain.jpeg');
+  background-size: cover; /* Adjusts the image to cover the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
 }
+
 
 /* This is for the box with the current weather update */
 .Current
 {
   text-align: center;
   display: block;
-  background-color: aqua;
+  background-color: rgb(197, 233, 233);
   width: 300px;
   height: 300px;
   margin-left: 40%;
@@ -53,7 +58,7 @@ input
   border-radius: 10px;
 }
 .day{
-  background-color: aqua;
+  background-color: rgb(196, 221, 221);
   align-items: center;
   margin-right: 10px;
   width: 150px;
@@ -93,7 +98,7 @@ button:active
 input
 {
   font-weight: bolder;
-  text-decoration: aqua;
+  text-decoration: rgb(155, 198, 198);
   font-style: italic;
   text-transform: uppercase;
 }
@@ -117,7 +122,7 @@ h1
   top: 10px;
   margin-left: 80%;
   margin-top: 130px;
-  background-color: aqua;
+  background-color: rgb(205, 229, 229);
   width: 170px;
   height: 170px;
   border-radius: 10px;
@@ -139,7 +144,7 @@ p{
 }
 /* components/Footer.css */
 .footer {
-  background-color: aqua;
+  background-color: rgb(207, 239, 239);
   color: rgb(15, 14, 14);
   text-align: center;
   padding: 20px;
@@ -201,4 +206,10 @@ p{
   transform: translate(0, 0);
   visibility: visible;
   animation: fadeOutSlideDown 0.5
+}
+.text
+{
+  color: aliceblue;
+  font-style: italic;
+  font-size: xx-large;
 }

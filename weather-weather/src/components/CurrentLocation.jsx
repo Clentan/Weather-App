@@ -127,21 +127,21 @@ export default function CurrentLocation() {
         const messages = [];
 
         if (data.weather[0].main === "Rain") {
-            messages.push("Rain is coming. Grab an umbrella!");
-            messages.push("It's wet outside! Don't forget your raincoat.");
-            messages.push("Stay dry, it's going to rain.");
+            messages.push("Rain is coming. Grab an umbrella🌂!");
+            messages.push("It's wet outside! Don't forget your raincoat.☂️");
+            messages.push("Stay dry, it's going to rain☔.");
         } else if (data.main.temp > 30) {
-            messages.push("Hot day ahead! Stay hydrated.");
-            messages.push("It's scorching out! Avoid too much sun.");
-            messages.push("Keep cool! It's over 30°C.");
+            messages.push("Hot day ahead! Stay hydrated.😎");
+            messages.push("It's scorching out! Avoid too much sun🌞.");
+            messages.push("Keep cool! It's over 30°C🫡.");
         } else if (data.main.temp < 10) {
-            messages.push("It's cold out there! Wear something warm.");
-            messages.push("Brrr! Stay warm, it's chilly outside.");
+            messages.push("It's cold out there! Wear something warm🥶.");
+            messages.push("Brrr! Stay warm, it's chilly ❄️.");
         } else {
-            messages.push("The weather looks perfect today!");
-            messages.push("It's a great day to be outdoors.");
-            messages.push("Enjoy the nice weather!");
-            messages.push("Enjoy the nice weather!");
+            messages.push("The weather looks perfect today!☁️");
+            messages.push("It's a great day to be outdoors😶‍🌫️.");
+            messages.push("Enjoy the nice weather!🆒");
+            messages.push("Enjoy the nice weather!🩴");
         }
 
         // Randomly pick a message from the list of possible messages
@@ -183,7 +183,7 @@ export default function CurrentLocation() {
                         {isModalOpen && (
                             <div className="modal">
                                 <h2>Upcoming Event</h2>
-                                <p>{upcomingEvent}</p> 
+                                <p className="text">{upcomingEvent}</p> 
                             </div>
                         )}
                     </>
@@ -199,7 +199,17 @@ export default function CurrentLocation() {
                 buttonStyle={{ color: "#4e503b", fontSize: "13px", fontWeight: "bold" }}
                 expires={150}
             >
-                This website uses cookies to enhance the user experience. 
+             <div>
+  This website uses ...
+  <a href="https://weather.com/en-ZA/intl-privacy" target="_blank" >
+    cookies
+  </a>....
+  to enhance the user experience. Read ...
+  <a href="https://weather.com/en-ZA/intl-privacy" target="_blank" >
+  
+    Terms and Conditions
+  </a>.
+</div>
             </CookieConsent>
         </div>
     );
